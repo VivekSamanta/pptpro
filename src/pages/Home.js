@@ -1,173 +1,23 @@
 import React from 'react'
-import SvgIcon from './Svg'
-import { Link } from 'react-router-dom'
+import Header from '../components/Header'
+import Popup from '../components/Popup'
+import Mobilesidemenu from '../components/Mobilesidemenu'
+import Preloader from '../components/Preloader'
+import Sidebar from '../components/Sidebar'
 
 function Home() {
   return (
     <div>
         
-        <header className="header sticky-active">
-            <div className="primary-header">
-                <div className="primary-header-inner">
-                    <div className="header-logo d-lg-block">
-                        <a href="index.html">
-                            <img src="assets/img/logo/logo-2.png" alt="Logo" />
-                        </a>
-                    </div>
-                    <div className="header-right-wrap">
-                        <div className="header-menu-wrap">
-                            <div className="mobile-menu-items">
-                                <ul>
-                                    <li className="menu-item-has-children active">
-                                        <a href="index.html">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Web Design</a></li>
-                                            <li><a href="index-2.html">Creative Studio</a></li>
-                                            <li><a href="index-3.html">Web Development</a></li>
-                                            <li><a href="index-4.html">Modern Agency</a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="menu-item-has-children">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="project.html">Portfolio</a></li>
-                                            <li><a href="project-details.html">Portfolio Details</a></li>
-                                            <li><a href="pricing.html">Pricing Plans</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="error.html">404 Error</a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="menu-item-has-children">
-                                        <a href="service.html">Services</a>
-                                        <ul>
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <Link to="shop">Shop</Link>
-                                    </li>
-                                    <li className="menu-item-has-children">
-                                        <a href="blog-grid.html">Blog</a>
-                                        <ul>
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-grid-2.html">Blog list</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div className="header-right">
-                            <div className="sidebar-icon">
-                                <button className="sidebar-trigger open">
-                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.300781 0H5.30078V5H0.300781V0Z" fill="currentColor"/>
-                                        <path d="M0.300781 9H5.30078V14H0.300781V9Z" fill="currentColor"/>
-                                        <path d="M0.300781 18H5.30078V23H0.300781V18Z" fill="currentColor"/>
-                                        <path d="M9.30078 0H14.3008V5H9.30078V0Z" fill="currentColor"/>
-                                        <path d="M9.30078 9H14.3008V14H9.30078V9Z" fill="currentColor"/>
-                                        <path d="M9.30078 18H14.3008V23H9.30078V18Z" fill="currentColor"/>
-                                        <path d="M18.3008 0H23.3008V5H18.3008V0Z" fill="currentColor"/>
-                                        <path d="M18.3008 9H23.3008V14H18.3008V9Z" fill="currentColor"/>
-                                        <path d="M18.3008 18H23.3008V23H18.3008V18Z" fill="currentColor"/>
-                                        </svg>
-                                </button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </header>
+        <Header />
         
-
-        <div id="popup-search-box">
-            <div className="box-inner-wrap d-flex align-items-center">
-                <form id="form" action="#" method="get" role="search">
-                    <input id="popup-search" type="text" name="s" placeholder="Type keywords here..." />
-                </form>
-                <div className="search-close"><i className="fa-sharp fa-regular fa-xmark"></i></div>
-            </div>
-        </div>
+        <Popup />
         
+        <Mobilesidemenu />
 
-        <div className="mobile-side-menu">
-            <div className="side-menu-content">
-                <div className="side-menu-head">
-                    <a href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo" /></a>
-                    <button className="mobile-side-menu-close"><i className="fa-regular fa-xmark"></i></button>
-                </div>
-                <div className="side-menu-wrap"></div>
-                <ul className="side-menu-list">
-                    <li><i className="fa-light fa-location-dot"></i>Address : <span>Amsterdam, 109-74</span></li>
-                    <li><i className="fa-light fa-phone"></i>Phone : <a href="tel:+01569896654">+01 569 896 654</a></li>
-                    <li><i className="fa-light fa-envelope"></i>Email : <a href="mailto:info@example.com">info@example.com</a></li>
-                </ul>
-            </div>
-        </div>
+        <Preloader />
         
-        <div className="mobile-side-menu-overlay"></div>
-
-        <div id="preloader">
-            <div className="preloader-close">X</div>
-            <div className="sk-three-bounce">
-                <div className="sk-child sk-bounce1"></div>
-                <div className="sk-child sk-bounce2"></div>
-                <div className="sk-child sk-bounce3"></div>
-            </div>
-        </div>
-        
-
-        <div id="sidebar-area" className="sidebar-area">
-            <button className="sidebar-trigger close">
-                <SvgIcon />
-            </button>
-            <div className="side-menu-content">
-                <div className="side-menu-logo">
-                    <a href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo" /></a>
-                </div>
-                <div className="side-menu-wrap"></div>
-                <div className="side-menu-about">
-                    <div className="side-menu-header">
-                        <h3>About Us</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="contact.html" className="rr-primary-btn">Contact Us</a>
-                </div>
-                <div className="side-menu-contact">
-                    <div className="side-menu-header">
-                        <h3>Contact Us</h3>
-                    </div>
-                    <ul className="side-menu-list">
-                        <li>
-                            <i className="fas fa-map-marker-alt"></i>
-                            <p>Valentin, Street Road 24, New York, </p>
-                        </li>
-                        <li>
-                            <i className="fas fa-phone"></i>
-                            <a href="tel:+000123456789">+000 123 (456) 789</a>
-                        </li>
-                        <li>
-                            <i className="fas fa-envelope-open-text"></i>
-                            <a href="mailto:runokcontact@gmail.com">runokcontact@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <ul className="side-menu-social">
-                    <li className="facebook"><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                    <li className="instagram"><a href="#"><i className="fab fa-instagram"></i></a></li>
-                    <li className="twitter"><a href="#"><i className="fab fa-twitter"></i></a></li>
-                    <li className="g-plus"><a href="#"><i className="fab fa-fab fa-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
+        <Sidebar />
         
 
         <section className="hero-section-3">
@@ -186,7 +36,7 @@ function Home() {
                     <h1 className="title anim-text"><br />Int<span>o</span> Reality</h1>
                     <p>With every single one of our clients, we bring forth a deep passion for creative
                         problem solving — which is what we deliver.</p>
-                    <a href="about.html" className="rr-primary-btn">Get Started Now<i className="fa-thin fa-arrow-right"></i></a>
+                    <a href="shop" className="rr-primary-btn">Get Started Now<i className="fa-thin fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -272,7 +122,7 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <a href="about.html" className="rr-primary-btn">Get Started Now <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
+                            <a href="shop" className="rr-primary-btn">Get Started Now <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +138,7 @@ function Home() {
                             <div className="section-heading heading-3">
                                 <h4 className="sub-heading after-none" data-text-animation="fade-in" data-duration="1.5">Service We Offer</h4>
                                 <h2 className="section-title" data-text-animation data-split="word" data-duration="1">We’ve amazing web solutions</h2>
-                                <a href="service.html" className="rr-primary-btn">More Services <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                <a href="service" className="rr-primary-btn">More Services <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -301,7 +151,7 @@ function Home() {
                                         <path d="M11.8887 0.563477C10.244 0.563477 8.89062 1.91686 8.89062 3.56156V35.5616C8.89062 36.8962 10.8926 36.8962 10.8926 35.5616V10.5674H50.8867V35.5616C50.8565 36.9252 52.9173 36.9252 52.8867 35.5616V3.56156C52.8867 1.91686 51.5353 0.563477 49.8906 0.563477H11.8887ZM11.8887 2.56547H49.8906C50.4619 2.56547 50.8867 2.99025 50.8867 3.56156V8.56544H10.8926V3.56156C10.8926 2.99025 11.3174 2.56547 11.8887 2.56547ZM13.8906 4.56354C13.3383 4.56354 12.8906 5.01129 12.8906 5.56355C12.8906 6.11586 13.3383 6.56345 13.8906 6.56345C14.4429 6.56345 14.8906 6.11586 14.8906 5.56355C14.8906 5.01129 14.4429 4.56354 13.8906 4.56354ZM17.8906 4.56354C17.3384 4.56354 16.8906 5.01129 16.8906 5.56355C16.8906 6.11586 17.3384 6.56345 17.8906 6.56345C18.4429 6.56345 18.8906 6.11586 18.8906 5.56355C18.8906 5.01129 18.4429 4.56354 17.8906 4.56354ZM21.8906 4.56354C21.3384 4.56354 20.8906 5.01129 20.8906 5.56355C20.8906 6.11586 21.3384 6.56345 21.8906 6.56345C22.4429 6.56345 22.8906 6.11586 22.8906 5.56355C22.8906 5.01129 22.4429 4.56354 21.8906 4.56354ZM35.8398 4.5655C34.4897 4.65734 34.5818 6.5986 35.8867 6.56553H47.8906C49.1947 6.53529 49.1947 4.59441 47.8906 4.5655H35.8398ZM3.89453 6.56553C2.24984 6.56553 0.890625 7.91695 0.890625 9.56165V45.5635C0.890625 47.2082 2.24984 48.5616 3.89453 48.5616H57.8926C59.5373 48.5616 60.8906 47.2082 60.8906 45.5635V9.56154C60.8906 7.91684 59.5373 6.56541 57.8926 6.56541H55.8926C54.5293 6.53518 54.5293 8.59568 55.8926 8.56544H57.8926C58.4639 8.56544 58.8887 8.99022 58.8887 9.56154V38.5654H2.89062V9.56154C2.89062 8.99022 3.32325 8.56544 3.89453 8.56544H5.88671C7.24995 8.59568 7.24995 6.53518 5.88671 6.56541L3.89453 6.56553ZM33.9023 14.5479C33.4627 14.5449 33.0728 14.8296 32.9414 15.2492L26.9395 33.2471C26.5163 34.5128 28.4147 35.1475 28.8379 33.8819L34.8398 15.878C35.0662 15.2305 34.5883 14.5524 33.9023 14.5479ZM38.25 20.3292L43.3281 24.5655L38.25 28.796C37.165 29.6454 38.5047 31.2483 39.5332 30.3312L45.5273 25.3331C46.006 24.9333 46.006 24.1978 45.5273 23.798L39.5332 18.7921C39.354 18.6387 39.1264 18.5536 38.8398 18.5539C37.8946 18.6367 37.5519 19.7642 38.25 20.3292ZM22.8652 18.5558C22.64 18.5634 22.4239 18.6465 22.252 18.792L16.252 23.7979C15.7733 24.1977 15.7733 24.9332 16.252 25.3329L22.252 30.3311C23.2839 31.2922 24.662 29.6358 23.5293 28.7959L18.4512 24.5653L23.5293 20.3291C24.2682 19.7241 23.8198 18.5267 22.8652 18.5558ZM2.89062 40.5674H58.8887V45.5635C58.8887 46.1348 58.4639 46.5596 57.8926 46.5596H3.89453C3.32325 46.5596 2.89062 46.1348 2.89062 45.5635V40.5674ZM32.9453 42.5655L28.8418 42.5675C27.5671 42.7198 27.6527 44.5255 28.8887 44.5597H32.8906C34.264 44.681 34.3783 42.5931 32.9453 42.5655ZM25.2812 50.4834C24.8799 50.4758 24.5123 50.7071 24.3477 51.0732C23.8661 52.1061 23.0034 53.3122 21.5137 54.5615H19.8906C18.2459 54.5615 16.8945 55.9228 16.8945 57.5675V59.5597C16.8925 60.1119 17.3384 60.5613 17.8906 60.5635H43.8887C44.444 60.5655 44.8947 60.115 44.8926 59.5597V57.5675C44.8926 55.9228 43.5334 54.5615 41.8887 54.5615H40.2676C38.778 53.3123 37.9151 52.106 37.4336 51.0732C37.2643 50.6976 36.8821 50.4643 36.4707 50.4853C35.7563 50.5231 35.3101 51.2748 35.6211 51.919C36.0109 52.7552 36.6062 53.652 37.4082 54.5615H24.373C25.175 53.652 25.7703 52.7552 26.1602 51.919C26.4776 51.2632 26.0097 50.4989 25.2812 50.4834ZM19.8906 56.5635H41.8887C42.4599 56.5635 42.8926 56.9962 42.8926 57.5675V58.5636H18.8945V57.5675C18.8945 56.9962 19.3193 56.5635 19.8906 56.5635Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <h3 className="title"><a href="service-details.html">Web Development</a></h3>
+                                <h3 className="title"><a href="service">Web Development</a></h3>
                                 <div className="service-img"><img src="assets/img/service/service-img-1.png" alt="service" /></div>
                             </div>
                             <div className="service-box">
@@ -318,7 +168,7 @@ function Home() {
                                         <path d="M49.6912 53.5635C49.4051 53.5635 49.121 53.449 48.9132 53.2222L46.3059 50.3943C46.0133 50.0785 45.9412 49.6164 46.1236 49.2284C46.645 48.1092 47.0245 46.9517 47.2492 45.7879C47.3319 45.364 47.6604 45.0333 48.0844 44.9485L51.7665 44.2108V41.7094L48.0844 40.9717C47.6626 40.8869 47.334 40.5562 47.2492 40.1322C47.0266 38.9684 46.645 37.811 46.1236 36.6896C45.9412 36.2996 46.0133 35.8396 46.3059 35.5237L48.8581 32.7552L47.3891 30.7308L43.9656 32.3058C43.5734 32.4839 43.1134 32.4139 42.7997 32.1193C41.8945 31.2756 40.9109 30.5548 39.8743 29.9804C39.4991 29.7726 39.2871 29.3571 39.3359 28.931L39.7747 25.2023L37.3941 24.4285L35.552 27.71C35.34 28.0852 34.9139 28.2887 34.4984 28.2421C33.3092 28.0958 32.0691 28.0958 30.8799 28.2421C30.458 28.2972 30.0383 28.0852 29.8242 27.71L27.9842 24.4285L25.6036 25.2023L26.0424 28.931C26.0912 29.3571 25.8792 29.7726 25.504 29.9804C24.4674 30.5548 23.4838 31.2756 22.5786 32.1193C22.267 32.4139 21.8049 32.4839 21.4127 32.3058L17.9892 30.7308L16.5201 32.7573L19.0724 35.5258C19.3649 35.8417 19.437 36.3038 19.2547 36.6917C18.7332 37.811 18.3538 38.9684 18.1291 40.1322C18.0464 40.5562 17.7178 40.8869 17.2939 40.9717L13.6096 41.7094V44.2108L17.2917 44.9485C17.7136 45.0333 18.0422 45.364 18.127 45.7879C18.2563 46.4514 18.4365 47.1298 18.6718 47.7997C18.8625 48.3529 18.57 48.955 18.0167 49.1479C17.4635 49.3408 16.8614 49.0482 16.6664 48.495C16.482 47.965 16.3251 47.4266 16.1958 46.8924L12.3419 46.1186C11.8459 46.019 11.4898 45.5844 11.4898 45.0799V40.8403C11.4898 40.3357 11.8459 39.9012 12.3419 39.8015L16.1958 39.0299C16.4057 38.1608 16.6855 37.298 17.0395 36.4522L14.3685 33.5565C14.0251 33.1855 13.9912 32.6238 14.2901 32.2147L16.783 28.7827C17.0819 28.3757 17.6224 28.2294 18.0824 28.4435L21.6628 30.0906C22.356 29.4928 23.0895 28.9565 23.8505 28.488L23.3905 24.5854C23.3333 24.0851 23.6364 23.6103 24.1176 23.4534L28.1495 22.1412C28.6244 21.9865 29.1543 22.1879 29.4023 22.6309L31.325 26.0608C32.2238 25.9824 33.1417 25.9824 34.0405 26.0608L35.9653 22.6309C36.2112 22.19 36.7433 21.9865 37.216 22.1412L41.2479 23.4513C41.7291 23.6082 42.0323 24.0809 41.975 24.5833L41.515 28.488C42.2761 28.9565 43.0095 29.4928 43.7027 30.0906L47.2831 28.4435C47.7431 28.2294 48.2879 28.3757 48.5826 28.7827L51.0755 32.2125C51.3744 32.6217 51.3405 33.1834 50.997 33.5544L48.3261 36.4501C48.6801 37.2938 48.962 38.1587 49.1698 39.0278L53.0236 39.7994C53.5302 39.9012 53.8864 40.3357 53.8864 40.8403V45.0799C53.8864 45.5844 53.5302 46.019 53.0342 46.1186L49.1804 46.8903C48.9705 47.7594 48.6907 48.6222 48.3367 49.468L50.4734 51.7849C50.872 52.2153 50.8444 52.8851 50.4141 53.2837C50.2085 53.4702 49.9498 53.5635 49.6912 53.5635ZM32.6881 53.5592C32.103 53.5592 31.6282 53.0844 31.6282 52.4993C31.6282 51.9142 32.103 51.4394 32.6881 51.4394C37.3644 51.4394 41.1674 47.6364 41.1674 42.9601C41.1674 38.2837 37.3644 34.4808 32.6881 34.4808C28.0117 34.4808 24.2088 38.2837 24.2088 42.9601C24.2088 44.6687 24.7133 46.3158 25.6693 47.7212C25.9979 48.2045 25.8749 48.8638 25.3895 49.1945C24.9104 49.5231 24.2512 49.4022 23.9183 48.9147C22.7228 47.1552 22.0889 45.0969 22.0889 42.9601C22.0889 37.1157 26.8437 32.3609 32.6881 32.3609C38.5324 32.3609 43.2872 37.1157 43.2872 42.9601C43.2872 48.8045 38.5324 53.5592 32.6881 53.5592Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <h3 className="title"><a href="service-details.html">Mobile Application</a></h3>
+                                <h3 className="title"><a href="service">Mobile Application</a></h3>
                                 <div className="service-img"><img src="assets/img/service/service-img-2.png" alt="service" /></div>
                             </div>
                             <div className="service-box">
@@ -333,7 +183,7 @@ function Home() {
                                         <path d="M14.5415 16.5821L10.6706 24.3238L12.4018 25.1894L16.2726 17.4477L14.5415 16.5821Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <h3 className="title"><a href="service-details.html">Design & Branding</a></h3>
+                                <h3 className="title"><a href="service">Design & Branding</a></h3>
                                 <div className="service-img"><img src="assets/img/service/service-img-3.png" alt="service" /></div>
                             </div>
                             <div className="service-box">
@@ -349,7 +199,7 @@ function Home() {
                                         <path d="M19.3356 15.1436L18.4456 13.3525C16.7774 14.1808 15.3735 15.4584 14.392 17.0414C13.4106 18.6244 12.8906 20.4499 12.8906 22.3125C12.8906 24.1751 13.4106 26.0006 14.392 27.5836C15.3735 29.1666 16.7774 30.4442 18.4456 31.2725L19.3356 29.4814C18.0007 28.8188 16.8774 27.7967 16.0921 26.5301C15.3067 25.2635 14.8906 23.8028 14.8906 22.3125C14.8906 20.8222 15.3067 19.3615 16.0921 18.0949C16.8774 16.8283 18.0007 15.8062 19.3356 15.1436Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <h3 className="title"><a href="service-details.html">App Development</a></h3>
+                                <h3 className="title"><a href="service">App Development</a></h3>
                                 <div className="service-img"><img src="assets/img/service/service-img-4.png" alt="service" /></div>
                             </div>
                         </div>
@@ -599,20 +449,20 @@ function Home() {
                             </div>
                             <ul className="team-social-2">
                                 <li className="facebook">
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="/"><i className="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li className="pinterest">
-                                    <a href="#"><i className="fab fa-pinterest"></i></a>
+                                    <a href="/"><i className="fab fa-pinterest"></i></a>
                                 </li>
                                 <li className="twitter">
-                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                    <a href="/"><i className="fab fa-twitter"></i></a>
                                 </li>
                                 <li className="instagram">
-                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                    <a href="/"><i className="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                             <div className="team-content">
-                                <h3 className="title"><a href="team-details.html">Charlotte Amitina</a></h3>
+                                <h3 className="title"><a href="team">Charlotte Amitina</a></h3>
                                 <span>Ui/Ux Designer</span>
                             </div>
                         </div>
@@ -625,20 +475,20 @@ function Home() {
                             </div>
                             <ul className="team-social-2">
                                 <li className="facebook">
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="/"><i className="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li className="pinterest">
-                                    <a href="#"><i className="fab fa-pinterest"></i></a>
+                                    <a href="/"><i className="fab fa-pinterest"></i></a>
                                 </li>
                                 <li className="twitter">
-                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                    <a href="/"><i className="fab fa-twitter"></i></a>
                                 </li>
                                 <li className="instagram">
-                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                    <a href="/"><i className="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                             <div className="team-content">
-                                <h3 className="title"><a href="team-details.html">William Edward</a></h3>
+                                <h3 className="title"><a href="team">William Edward</a></h3>
                                 <span>Project Manager</span>
                             </div>
                         </div>
@@ -651,20 +501,20 @@ function Home() {
                             </div>
                             <ul className="team-social-2">
                                 <li className="facebook">
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="/"><i className="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li className="pinterest">
-                                    <a href="#"><i className="fab fa-pinterest"></i></a>
+                                    <a href="/"><i className="fab fa-pinterest"></i></a>
                                 </li>
                                 <li className="twitter">
-                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                    <a href="/"><i className="fab fa-twitter"></i></a>
                                 </li>
                                 <li className="instagram">
-                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                    <a href="/"><i className="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                             <div className="team-content">
-                                <h3 className="title"><a href="team-details.html">Hannah Chloe</a></h3>
+                                <h3 className="title"><a href="team">Hannah Chloe</a></h3>
                                 <span>Product Designer</span>
                             </div>
                         </div>
@@ -677,20 +527,20 @@ function Home() {
                             </div>
                             <ul className="team-social-2">
                                 <li className="facebook">
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="/"><i className="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li className="pinterest">
-                                    <a href="#"><i className="fab fa-pinterest"></i></a>
+                                    <a href="/"><i className="fab fa-pinterest"></i></a>
                                 </li>
                                 <li className="twitter">
-                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                    <a href="/"><i className="fab fa-twitter"></i></a>
                                 </li>
                                 <li className="instagram">
-                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                    <a href="/"><i className="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                             <div className="team-content">
-                                <h3 className="title"><a href="team-details.html">Maiselan Willam</a></h3>
+                                <h3 className="title"><a href="team">Maiselan Willam</a></h3>
                                 <span>Web Developer</span>
                             </div>
                         </div>
@@ -698,113 +548,6 @@ function Home() {
                 </div>
             </div>
         </section>
-        
-
-        <section className="pricing-section pt-130 pb-130">
-            <div className="container">
-                <div className="section-heading heading-3 text-center">
-                    <h4 className="sub-heading" data-text-animation="fade-in" data-duration="1.5">Our Pricing Plans</h4>
-                    <h2 className="section-title" data-text-animation data-split="word" data-duration="1">Our Flexible Pricing</h2>
-                </div>
-                <div className="pricing-tab wow fade-in-bottom" data-wow-delay="500ms">
-                    <nav className="nav-wrap">
-                        <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Billed Yearly <span>30%</span></button>
-                            <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Billed Monthly</button>
-                        </div>
-                    </nav>
-                    <div className="tab-content" id="nav-tabContent">
-                        <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div className="row gy-lg-0 gy-4 justify-content-center">
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="pricing-item">
-                                        <h4 className="plan">Basic Plan</h4>
-                                        <h2 className="price">$39</h2>
-                                        <span>Basic features for up to 10 Users</span>
-                                        <div className="pricing-btn-wrap">
-                                            <a href="contact.html" className="rr-primary-btn pricing-btn">Get in Touch <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="pricing.html" className="rr-primary-btn pricing-btn">View Details <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                        </div>
-                                        <h3 className="feature">Features:</h3>
-                                        <p>Everything in our free plan it’s included with all premium packages.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="pricing-item">
-                                        <h4 className="plan">Strandard Plan</h4>
-                                        <h2 className="price">$49</h2>
-                                        <span>Basic features for up to 10 Users</span>
-                                        <div className="pricing-btn-wrap">
-                                            <a href="contact.html" className="rr-primary-btn pricing-btn">Get in Touch <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="pricing.html" className="rr-primary-btn pricing-btn">View Details <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                        </div>
-                                        <h3 className="feature">Features:</h3>
-                                        <p>Everything in our free plan it’s included with all premium packages.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="pricing-item">
-                                        <h4 className="plan">Premium Plan</h4>
-                                        <h2 className="price">$59</h2>
-                                        <span>Basic features for up to 10 Users</span>
-                                        <div className="pricing-btn-wrap">
-                                            <a href="contact.html" className="rr-primary-btn pricing-btn">Get in Touch <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="pricing.html" className="rr-primary-btn pricing-btn">View Details <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                        </div>
-                                        <h3 className="feature">Features:</h3>
-                                        <p>Everything in our free plan it’s included with all premium packages.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <div className="row gy-lg-0 gy-4 justify-content-center">
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="pricing-item">
-                                        <h4 className="plan">Basic Plan</h4>
-                                        <h2 className="price">$69</h2>
-                                        <span>Basic features for up to 10 Users</span>
-                                        <div className="pricing-btn-wrap">
-                                            <a href="contact.html" className="rr-primary-btn pricing-btn">Get in Touch <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="pricing.html" className="rr-primary-btn pricing-btn">View Details <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                        </div>
-                                        <h3 className="feature">Features:</h3>
-                                        <p>Everything in our free plan it’s included with all premium packages.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="pricing-item">
-                                        <h4 className="plan">Strandard Plan</h4>
-                                        <h2 className="price">$79</h2>
-                                        <span>Basic features for up to 10 Users</span>
-                                        <div className="pricing-btn-wrap">
-                                            <a href="contact.html" className="rr-primary-btn pricing-btn">Get in Touch <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="pricing.html" className="rr-primary-btn pricing-btn">View Details <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                        </div>
-                                        <h3 className="feature">Features:</h3>
-                                        <p>Everything in our free plan it’s included with all premium packages.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="pricing-item">
-                                        <h4 className="plan">Premium Plan</h4>
-                                        <h2 className="price">$99</h2>
-                                        <span>Basic features for up to 10 Users</span>
-                                        <div className="pricing-btn-wrap">
-                                            <a href="contact.html" className="rr-primary-btn pricing-btn">Get in Touch <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="pricing.html" className="rr-primary-btn pricing-btn">View Details <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                        </div>
-                                        <h3 className="feature">Features:</h3>
-                                        <p>Everything in our free plan it’s included with all premium packages.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
 
         <section className="appointment-section pb-130">
             <div className="container">
@@ -919,8 +662,8 @@ function Home() {
                                         <li><i className="fa-sharp fa-regular fa-clock"></i>25 June, 2024</li>
                                         <li><i className="fa-light fa-user"></i>Post by: Admin</li>
                                     </ul>
-                                    <h3 className="title"><a href="blog-details.html">Redefining User Experience with Our Web Design Agency...</a></h3>
-                                    <a href="blog-details.html" className="rr-primary-btn">Read More <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                    <h3 className="title"><a href="blogdetails">Redefining User Experience with Our Web Design Agency...</a></h3>
+                                    <a href="blogdetails" className="rr-primary-btn">Read More <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -936,8 +679,8 @@ function Home() {
                                         <li><i className="fa-sharp fa-regular fa-clock"></i>25 June, 2024</li>
                                         <li><i className="fa-light fa-user"></i>Post by: Admin</li>
                                     </ul>
-                                    <h3 className="title"><a href="blog-details.html">Why Prioritizes User Experience in Every Web Design Project</a></h3>
-                                    <a href="blog-details.html" className="rr-primary-btn">Read More <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                    <h3 className="title"><a href="blogdetails">Why Prioritizes User Experience in Every Web Design Project</a></h3>
+                                    <a href="blogdetails" className="rr-primary-btn">Read More <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -953,8 +696,8 @@ function Home() {
                                         <li><i className="fa-sharp fa-regular fa-clock"></i>25 June, 2024</li>
                                         <li><i className="fa-light fa-user"></i>Post by: Admin</li>
                                     </ul>
-                                    <h3 className="title"><a href="blog-details.html">Demystifying the Wizardry of Our Web Design Agency</a></h3>
-                                    <a href="blog-details.html" className="rr-primary-btn">Read More <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                    <h3 className="title"><a href="blogdetails">Demystifying the Wizardry of Our Web Design Agency</a></h3>
+                                    <a href="blogdetails" className="rr-primary-btn">Read More <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -969,16 +712,16 @@ function Home() {
             <div className="container">
                 <div className="footer-top">
                     <h2 className="title" data-text-animation data-split="word" data-duration="1">Let’s Start Your Next <br /> Dream Project</h2>
-                    <a href="contact.html" className="footer-btn"><i className="fa-sharp fa-regular fa-arrow-right"></i></a>
+                    <a href="contact" className="footer-btn"><i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                 </div>
                 <div className="row footer-wrap">
                     <ul className="footer-text-social">
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">pinterest</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Skype</a></li>
+                        <li><a href="/">facebook</a></li>
+                        <li><a href="/">Instagram</a></li>
+                        <li><a href="/">twitter</a></li>
+                        <li><a href="/">pinterest</a></li>
+                        <li><a href="/">Discord</a></li>
+                        <li><a href="/">Skype</a></li>
                     </ul>
                 </div>
             </div>
@@ -986,16 +729,15 @@ function Home() {
                 <div className="container">
                     <div className="row copyright-content content-2">
                         <div className="col-md-6">
-                            <div className="site-logo"><a href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo" /></a></div>
+                            <div className="site-logo"><a href="/"><img src="assets/img/logo/logo-2.png" alt="logo" /></a></div>
                         </div>
                         <div className="col-md-6">
-                            <p>© 2024 Runok. All Rights Reserved.</p>
+                            <p>© 2024 PPTPRO. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        
 
         <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
     
