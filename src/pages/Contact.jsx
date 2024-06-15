@@ -3,11 +3,15 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Popup from '../components/Popup'
 import Sidebar from '../components/Sidebar'
-import Preloader from '../components/Preloader'
+import { Helmet } from 'react-helmet'
 
 function Contact() {
   return (
     <div>
+
+        <Helmet>
+            <title>PPTPRO | Contact</title>
+        </Helmet>
       
         <Header />
 
@@ -15,7 +19,7 @@ function Contact() {
 
         <Sidebar />
 
-        <Preloader />
+        
 
         <section className="page-header" data-background="assets/img/bg-img/page-header-bg.jpg">
             <div className="overlay"></div>
@@ -107,7 +111,7 @@ function Contact() {
                                     <div className="form-group row">
                                         <div className="col-md-12">
                                             <div className="form-item">
-                                                <div className="nice-select select-control form-control country" tabindex="0"><span className="current">Select Queary Topic</span><ul className="list"><li data-value="" className="option selected focus">Select Queary Topic</li><li data-value="vdt" className="option">Plan One</li><li data-value="can" className="option">Plan Two</li><li data-value="uk" className="option">Plan Three</li></ul></div>
+                                                <div className="nice-select select-control form-control country" tabIndex="0"><span className="current">Select Queary Topic</span><ul className="list"><li data-value="" className="option selected focus">Select Queary Topic</li><li data-value="vdt" className="option">Plan One</li><li data-value="can" className="option">Plan Two</li><li data-value="uk" className="option">Plan Three</li></ul></div>
                                             </div>
                                         </div>
                                     </div>
@@ -236,7 +240,7 @@ function Contact() {
 
         <div className="map-wrapper pb-130">
             <div className="container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8826.923787362664!2d-118.27754354757262!3d34.03471770929568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1566525118697!5m2!1svi!2s" width="100%" height="600" frameborder="0" style={{border:"0"}} allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8826.923787362664!2d-118.27754354757262!3d34.03471770929568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1566525118697!5m2!1svi!2s" width="100%" height="600" frameBorder="0" style={{border:"0"}} allowFullScreen=""></iframe>
             </div>
         </div>
 

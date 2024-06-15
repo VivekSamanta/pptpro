@@ -2,12 +2,19 @@ import React from 'react'
 import Header from '../components/Header'
 import Popup from '../components/Popup'
 import Mobilesidemenu from '../components/Mobilesidemenu'
-import Preloader from '../components/Preloader'
 import Sidebar from '../components/Sidebar'
+import { Helmet } from 'react-helmet'
+import AboutCounter from '../components/Aboutcounter'
+import CounterSection from '../components/CounterSection'
+
 
 function Home() {
   return (
     <div>
+
+        <Helmet>
+            <title>PPTPRO | Home</title>
+        </Helmet>
         
         <Header />
         
@@ -15,20 +22,20 @@ function Home() {
         
         <Mobilesidemenu />
 
-        <Preloader />
+        
         
         <Sidebar />
         
 
         <section className="hero-section-3">
             <div className="hero-round-img">
-                <img src="assets/img/images/hero-img-5.png" alt="img" />
+                <img src="assets/img/images/hero-img.jpg" alt="img" />
             </div>
             <div className="shapes">
                 <div className="round-shape"></div>
                 <div className="round-shape-2"></div>
                 <div className="border-shape"></div>
-                <a href="#sponsor" className="scroll-down-btn"><img src="assets/img/icon/scroll.png" alt="scroll" /></a>
+                <a href="#sponsor" className="scroll-down-btn"><img src="assets/img/icon/scroll-light-2.png" alt="scroll" /></a>
             </div>
             <div className="container">
                 <div className="hero-content-3">
@@ -106,22 +113,7 @@ function Home() {
                                 <h2 className="section-title t-up" data-text-animation data-split="word" data-duration="1">We want to bring business and the digital world together</h2>
                                 <p>This is the main factor that sets us apart from our competition and allows us to deliver a specialist business consultancy service. Through our years of experience, we’ve also learned that while each channel has its own set of advantages, they all work best when strategically paired with other channels.</p>
                             </div>
-                            <div className="about-counter-wrap">
-                                <div className="about-counter">
-                                    <div className="icon"><img src="assets/img/icon/about-3.png" alt="icon" /></div>
-                                    <div className="content">
-                                        <h3 className="title"><span className="odometer" data-count="25">0</span>+</h3>
-                                        <p>Years on the market</p>
-                                    </div>
-                                </div>
-                                <div className="about-counter">
-                                    <div className="icon"><img src="assets/img/icon/about-4.png" alt="icon" /></div>
-                                    <div className="content">
-                                        <h3 className="title"><span className="odometer" data-count="375">0</span>+</h3>
-                                        <p>Projects delivered so far</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <AboutCounter />
                             <a href="shop" className="rr-primary-btn">Get Started Now <i className="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -304,7 +296,7 @@ function Home() {
         </section>
         
 
-        <div className="running-text running-3">
+        {/* <div className="running-text running-3">
             <div className="bg-img" data-background="assets/img/bg-img/running-bg.jpg"></div>
             <div className="container">
                 <div className="scroller" data-speed="slow">
@@ -320,7 +312,7 @@ function Home() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> */}
         
 
         <section className="project-section pt-130 overflow-hidden">
@@ -404,32 +396,7 @@ function Home() {
 
         <section className="counter-section counter-2">
             <div className="container">
-                <div className="row gy-lg-0 gy-4">
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="10">0</span></h3>
-                            <p>Years of <br />Experience</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="18">0</span></h3>
-                            <p>Sillded <br /> Perforamce</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="32">0</span></h3>
-                            <p>Visited <br /> Conference</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="1">0</span>k</h3>
-                            <p>Years of <br />Experience</p>
-                        </div>
-                    </div>
-                </div>
+                <CounterSection />
             </div>
         </section>
         
@@ -708,8 +675,8 @@ function Home() {
         
 
         <footer className="footer-section footer-2 footer-3 bg-dark-1 overflow-hidden">
-            <div className="shape"><img src="assets/img/shapes/footer-shape-2.png" alt="footer" /></div>
-            <div className="container">
+            <div className="shape"></div>
+            <div className="container pb-30">
                 <div className="footer-top">
                     <h2 className="title" data-text-animation data-split="word" data-duration="1">Let’s Start Your Next <br /> Dream Project</h2>
                     <a href="contact" className="footer-btn"><i className="fa-sharp fa-regular fa-arrow-right"></i></a>
@@ -729,7 +696,7 @@ function Home() {
                 <div className="container">
                     <div className="row copyright-content content-2">
                         <div className="col-md-6">
-                            <div className="site-logo"><a href="/"><img src="assets/img/logo/logo-2.png" alt="logo" /></a></div>
+                            <div className="site-logo"><a href="/"><img src="assets/img/logo/logo-1.webp" alt="logo" /></a></div>
                         </div>
                         <div className="col-md-6">
                             <p>© 2024 PPTPRO. All Rights Reserved.</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
                 <div className="primary-header-inner">
                     <div className="header-logo d-lg-block">
                         <a href="/">
-                            <img src="assets/img/logo/logo-2.png" alt="Logo" />
+                            <img src="assets/img/logo/logo-1.webp" alt="Logo" />
                         </a>
                     </div>
                     <div className="header-right-wrap">
@@ -15,22 +16,22 @@ function Header() {
                             <div className="mobile-menu-items">
                                 <ul>
                                     <li>
-                                        <a href="about">About</a>
+                                        <a href="/about">About</a>
                                     </li>
                                     <li>
-                                        <a href="team">Team</a>
+                                        <a href="/team">Team</a>
                                     </li>
                                     <li>
-                                        <a href="service">Services</a>
+                                        <a href="/service">Services</a>
                                     </li>
                                     <li>
-                                        <a href="shop">Shop</a>
+                                        <a href="/shop">Shop</a>
                                     </li>
                                     <li>
-                                        <a href="blog">Blog</a>
+                                        <a href="/blog">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="contact">Contact</a>
+                                        <a href="/contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>

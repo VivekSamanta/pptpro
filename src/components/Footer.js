@@ -4,14 +4,14 @@ function Footer() {
   return (
     <>
         <footer className="footer-section bg-dark-1">
-            <div className="shape"><img src="assets/img/shapes/footer-shape.png" alt="footer" /></div>
+            <div className="shape"></div>
             <div className="container">
                 <div className="row footer-wrap">
                     <div className="col-lg-3 col-md-6">
                         <div className="footer-widget">
                             <div className="widget-header">
                                 <div className="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo" /></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo-1.webp" alt="logo" /></a>
                                 </div>
                             </div>
                             <p className="mb-20">Centric aplications productize before front end vortals visualize front end is results and value added</p>
@@ -58,7 +58,7 @@ function Footer() {
                             </div>
                             <div className="form-check form-item">
                                 <input className="form-check-input" type="checkbox" value="" id="man" />
-                                <label className="form-check-label" for="man">
+                                <label className="form-check-label" htmlFor="man">
                                     I’m okay with getting emails and having
                                     that tracked to improve my experience
                                 </label>

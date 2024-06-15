@@ -3,11 +3,15 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Popup from '../components/Popup'
 import Sidebar from '../components/Sidebar'
-import Preloader from '../components/Preloader'
+import { Helmet } from 'react-helmet'
 
 function Blog() {
   return (
     <div>
+
+        <Helmet>
+            <title>PPTPRO | Blog</title>
+        </Helmet>
       
         <Header />
 
@@ -15,7 +19,7 @@ function Blog() {
 
         <Sidebar />
 
-        <Preloader />
+        
 
         <section className="page-header" data-background="assets/img/bg-img/page-header-bg.jpg">
             <div className="overlay"></div>

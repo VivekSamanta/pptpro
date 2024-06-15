@@ -2,12 +2,17 @@ import React from 'react'
 import Header from '../components/Header'
 import Popup from '../components/Popup'
 import Sidebar from '../components/Sidebar'
-import Preloader from '../components/Preloader'
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet'
+import CounterSection from '../components/CounterSection'
 
 function About() {
   return (
     <div>
+
+        <Helmet>
+            <title>PPTPRO | About</title>
+        </Helmet>
       
         <Header />
 
@@ -15,9 +20,9 @@ function About() {
 
         <Sidebar />
 
-        <Preloader />
+        
 
-        <section className="page-header" data-background="assets/img/bg-img/page-header-bg.jpg">
+        {/* <section className="page-header" data-background="assets/img/bg-img/page-header-bg.jpg">
             <div className="overlay"></div>
             <div className="shapes">
                 <div className="shape shape-1"><img src="assets/img/shapes/page-header-shape-1.png" alt="shape" /></div>
@@ -30,10 +35,10 @@ function About() {
                     <h4 className="sub-title"><a className="home" href="/">Home </a><span></span><a className="inner-page" href="about"> About Us</a></h4>
                 </div>
             </div>
-        </section>
+        </section> */}
         
 
-        <section className="about-section-2 pt-130 pb-130">
+        <section className="about-section-2 pt-250 pb-130">
             <div className="container">
                 <div className="row about-wrap-2 gy-lg-0 gy-4 align-items-center">
                     <div className="col-lg-5 col-md-12">
@@ -59,11 +64,11 @@ function About() {
                             </div>
                             <div className="about-items">
                                 <div className="about-item">
-                                    <div className="icon"><img src="assets/img/icon/about-1.png" alt="icon" /></div>
+                                    <div className="icon"><img src="assets/img/icon/creative.png" alt="icon" /></div>
                                     <div className="content"><h4 className="title">Professional Creative <br />Team Members</h4></div>
                                 </div>
                                 <div className="about-item">
-                                    <div className="icon"><img src="assets/img/icon/about-2.png" alt="icon" /></div>
+                                    <div className="icon"><img src="assets/img/icon/blueprint.png" alt="icon" /></div>
                                     <div className="content"><h4 className="title">Provide Market Standard <br />Service to Client’s</h4></div>
                                 </div>
                             </div>
@@ -114,37 +119,12 @@ function About() {
 
         <section className="counter-section counter-2">
             <div className="container">
-                <div className="row gy-lg-0 gy-4">
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="10">0</span></h3>
-                            <p>Years of <br />Experience</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="18">0</span></h3>
-                            <p>Skilled <br /> Performance</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="32">0</span></h3>
-                            <p>Visited <br /> Conference</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <div className="counter-item">
-                            <h3 className="title"><span className="odometer" data-count="1">0</span>k</h3>
-                            <p>Years of <br />Experience</p>
-                        </div>
-                    </div>
-                </div>
+                <CounterSection />
             </div>
         </section>
         
 
-        <div className="running-text running-3">
+        {/* <div className="running-text running-3">
             <div className="bg-img" data-background="assets/img/bg-img/running-bg.jpg"></div>
             <div className="container">
                 <div className="scroller" data-speed="slow">
@@ -160,7 +140,7 @@ function About() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> */}
         
 
         <section className="about-section-5 pt-130 pb-130">
@@ -381,8 +361,6 @@ function About() {
         
 
         <Footer />
-
-        
     
     </div>
   )

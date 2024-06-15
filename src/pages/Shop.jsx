@@ -2,12 +2,16 @@ import React from 'react'
 import Header from '../components/Header'
 import Popup from '../components/Popup'
 import Sidebar from '../components/Sidebar'
-import Preloader from '../components/Preloader'
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet'
 
 function Shop() {
   return (
     <div>
+
+        <Helmet>
+            <title>PPTPRO | Shop</title>
+        </Helmet>
       
         <Header />
         
@@ -15,7 +19,7 @@ function Shop() {
         
         <Sidebar />
         
-        <Preloader />
+        
         
         <section className="page-header" data-background="assets/img/bg-img/page-header-bg.jpg">
             <div className="overlay"></div>
@@ -52,7 +56,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">Watch Series</span>
-                                <h3 className="title"><a href="/">Multiply Tokon Maxer</a><span> <span className="offer">$350.00</span>$250.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Multiply Tokon Maxer</a><span> <span className="offer">$350.00</span>$250.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -67,7 +71,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">Headphone Box</span>
-                                <h3 className="title"><a href="/">Boat Headphone</a><span>$350.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Boat Headphone</a><span>$350.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -83,7 +87,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">UPS Service</span>
-                                <h3 className="title"><a href="/">Latest Ups available</a><span> <span className="offer">$250.00</span>$157.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Latest Ups available</a><span> <span className="offer">$250.00</span>$157.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -98,7 +102,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">Headphone Box</span>
-                                <h3 className="title"><a href="/">Beats Headset</a><span>$342.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Beats Headset</a><span>$342.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -113,7 +117,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">Watch Series</span>
-                                <h3 className="title"><a href="/">Multiply Tokon Maxer</a><span>$223.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Multiply Tokon Maxer</a><span>$223.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -129,7 +133,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">Headphone Box</span>
-                                <h3 className="title"><a href="/">Boat Headphone</a><span> <span className="offer">$600.00</span>$421.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Boat Headphone</a><span> <span className="offer">$600.00</span>$421.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -144,7 +148,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">UPS Service</span>
-                                <h3 className="title"><a href="/">Latest Ups available</a><span>$153.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Latest Ups available</a><span>$153.00</span></h3>
                             </div>
                         </div>
                     </div>
@@ -160,7 +164,7 @@ function Shop() {
                             </div>
                             <div className="shop-content">
                                 <span className="category">Headphone Box</span>
-                                <h3 className="title"><a href="/">Beats Headset</a><span><span className="offer">$400.00</span>$230.00</span></h3>
+                                <h3 className="title"><a href="shopdetails">Beats Headset</a><span><span className="offer">$400.00</span>$230.00</span></h3>
                             </div>
                         </div>
                     </div>
