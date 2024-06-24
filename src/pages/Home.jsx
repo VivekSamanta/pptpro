@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import { Helmet } from 'react-helmet'
 import AboutCounter from '../components/Aboutcounter'
 import CounterSection from '../components/CounterSection'
+import Animate from '../components/Animate'
 
 
 function Home() {
@@ -313,6 +314,8 @@ function Home() {
                 </div>
             </div>
         </div> */}
+
+        <Animate />
         
 
         <section className="project-section pt-130 overflow-hidden">
